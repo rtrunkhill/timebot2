@@ -1,0 +1,18 @@
+Required user input:
+    From: time, timezone.a
+    To: timezone.b
+
+Return: time(convered), timezone.b
+
+provide timezone link https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations
+
+use this https://apidock.com/ruby/DateTime/strftime
+
+
+
+
+1. error message/escape for invalid input - really struggling w/ this
+2. instructions into help function - done
+3. input into first string: !timebot 2000, +3, -4 or !timebot help  
+ - timebot help and list done, not sure how to do the other
+ 
