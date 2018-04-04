@@ -44,7 +44,7 @@ bot.message(start_with: '/timebot') do |event|
     else 
         splitting = try_this.split(' ')
         if splitting.count != 3
-            event.respond "#{event.user.mention} You done messed up, Timebot requires 3 inputs. It should look like this: _2100 +3 -4_"
+            event.respond "#{event.user.mention} You done messed up. Timebot requires 3 inputs, it should look like this: _2100 +3 -4_"
         elsif letters?(splitting[1]) == true || letters?(splitting[2]) == true
             event.respond "#{event.user.mention} Timezones must be in numerical format.  It should look like this: _2100 +3 -4_" 
         else
