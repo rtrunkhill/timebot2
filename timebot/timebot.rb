@@ -16,8 +16,8 @@ bot.message(start_with: '/timebot') do |event|
     end
     
     def time_changer(time, zone_a, zone_b)
-        message_time = zone_b
-        zone_a > 0 ? from_time = "+#{zone_a}" : from_time = zone_a
+        zone_b >= 0 ? message_time = "+#{zone_b}" : message_time = zone_b
+        zone_a >= 0 ? from_time = "+#{zone_a}" : from_time = zone_a
         zone_a = zone_a * 100
         zone_b = zone_b * 100
         new_time = time - (zone_a - zone_b)
